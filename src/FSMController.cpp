@@ -108,5 +108,3 @@ Move BlinkyStateMachine::update(const GameState& gs){
 BlinkyStateMachine::~BlinkyStateMachine(){
 
 }
-
-

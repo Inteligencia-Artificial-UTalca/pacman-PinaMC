@@ -3,6 +3,15 @@
  *
  *  Created on: Apr 17, 2018
  *      Author: VIDEOJUEGOS UTALCA
+ * 
+ * En este codigo se crean los personajes y se asigna los controladores a cada uno de ellos.
+ * se ejecuta en bucle y en cada iteracion se actualiza el estado del juego.
+ * 
+ * Fantasma 0 usa fsmController
+ * Fantasma 1 usa btGhostController 
+ * Fantasma 2 usa simpleController
+ * Fantasma 3 usa randomController
+ * Pacman usa simplePacmanController
  */
 #include <chrono>
 #include <thread>
