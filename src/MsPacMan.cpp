@@ -5,9 +5,11 @@
  *      Author: nbarriga
  */
 
+//Codigo para manejar los stados de pacman en gameState
 #include "MsPacMan.h"
 #include <iostream>
 
+using namespace std;
 extern bool nogui;
 
 MsPacMan::MsPacMan(int startNode):Character(startNode),score(0),lives(3) {
