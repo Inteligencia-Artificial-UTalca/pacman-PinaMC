@@ -22,6 +22,7 @@
 #include "SimpleController.h"
 #include "SimplePacmanController.h"
 #include "BTGhostController.h"
+#include "PinkyController.h"
 #include "FSMController.h"
 #include "Ghost.h"
 #include "BlinkyController.h"
@@ -52,20 +53,16 @@ gv(std::make_unique<GameView>(std::vector<std::string>{"images/maze-a.png","imag
 		ghosts.push_back(ghost);
 	}
 	gameState.addGhosts(ghosts);
-	/*ghostsControl.push_back(std::make_shared<FSMController>(ghosts[0]));
+	ghostsControl.push_back(std::make_shared<FSMController>(ghosts[0]));
 	ghostsControl.push_back(std::make_shared<BTGhostController>(ghosts[1]));
-	ghostsControl.push_back(std::make_shared<SimpleController>(ghosts[2]));
-	ghostsControl.push_back(std::make_shared<RandomController>(ghosts[3]));
-	/  ghostsControl.push_back(std::make_shared<BlinkyController>(ghosts[0]));
-	//  ghostsControl.push_back(std::make_shared<InkyController>(ghosts[1]));
-	//  ghostsControl.push_back(std::make_shared<PinkyController>(ghosts[2]));
-	//  ghostsControl.push_back(std::make_shared<SueController>(ghosts[3]));
+	//ghostsControl.push_back(std::make_shared<SimpleController>(ghosts[2]));
+	//ghostsControl.push_back(std::make_shared<RandomController>(ghosts[3]));
+	
+	//ghostsControl.push_back(std::make_shared<BlinkyController>(ghosts[0]));
+	//ghostsControl.push_back(std::make_shared<InkyController>(ghosts[1]));
+	ghostsControl.push_back(std::make_shared<PinkyController>(ghosts[2]));
+	ghostsControl.push_back(std::make_shared<PinkyController>(ghosts[3]));
 
-	*/
-
-	for (int i=0;i<4;i++){
-		ghostsControl.push_back(std::make_shared<BTGhostController>(ghosts[i]));
-	}
 }
 
 const int NOSCORELIMIT = 10000;
